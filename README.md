@@ -1,4 +1,4 @@
-# Chess Studio
+# Slate-Chess
 
 A modern, minimalist, tournament-grade chess web application built with pure HTML, CSS, and JavaScript. Powered by the Stockfish AI engine, it features real-time position analysis, bespoke board aesthetics, procedural audio, and zero dependencies—designed to run standalone in any browser or deploy instantly to Vercel.
 
