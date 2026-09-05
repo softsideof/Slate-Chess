@@ -93,4 +93,4 @@ Then visit `http://localhost:8080` in your browser.
 
 ## License
 
-MIT License — Feel free to use, modify, and distribute for personal or commercial projects.
+MIT License - Feel free to use, modify, and distribute for personal or commercial projects.
