@@ -1,4 +1,4 @@
-# Slate-Chess
+# Chess Studio
 
 A modern, minimalist, tournament-grade chess web application built with pure HTML, CSS, and JavaScript. Powered by the Stockfish AI engine, it features real-time position analysis, bespoke board aesthetics, procedural audio, and zero dependencies—designed to run standalone in any browser or deploy instantly to Vercel.
 
@@ -72,9 +72,21 @@ Then visit `http://localhost:8080` in your browser.
 ## Project Structure
 
 ```text
-├── index.html     # Mirror entry point for Vercel/Netlify root serving
-├── chess.html     # Primary standalone single-file chess application
-└── README.md      # Project documentation
+slate-chess/
+├── .gitignore          # Git ignore rules for editor, OS, and temporary files
+├── index.html          # Clean semantic markup and application entry point
+├── README.md           # Project documentation and setup guide
+├── css/
+│   ├── variables.css   # Design tokens, color palettes, and bespoke board themes
+│   ├── board.css       # Chessboard grid, pieces, eval bar, and visual arrows
+│   ├── components.css  # Header, side dock, clocks, history, and modals
+│   └── responsive.css  # Mobile and tablet viewport adaptations
+└── js/
+    ├── pieces.js       # Tournament-standard vector SVG pieces
+    ├── sound.js        # Web Audio API procedural sound engine
+    ├── local-ai.js     # Heuristic Negamax alpha-beta fallback chess engine
+    ├── engine.js       # Stockfish UCI Web Worker integration & evaluation
+    └── app.js          # Main game controller, board UI, drag-and-drop & clocks
 ```
 
 ---
@@ -93,4 +105,4 @@ Then visit `http://localhost:8080` in your browser.
 
 ## License
 
-MIT License - Feel free to use, modify, and distribute for personal or commercial projects.
+MIT License — Feel free to use, modify, and distribute for personal or commercial projects.

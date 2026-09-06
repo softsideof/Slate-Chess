@@ -1,0 +1,48 @@
+/* === RESPONSIVE DESIGN FOR ALL DEVICES === */
+@media (max-width: 920px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+    .board-column {
+        max-width: min(88vw, 480px);
+    }
+    .side-dock {
+        width: 100%;
+        max-width: min(88vw, 480px);
+        min-height: auto;
+    }
+    .slider-wrapper {
+        padding: 0.25rem 0.5rem;
+    }
+    .range-slider {
+        width: 75px;
+    }
+}
+
+@media (max-width: 640px) {
+    header {
+        padding: 0.5rem 0.75rem;
+        gap: 0.4rem;
+    }
+    .brand-title {
+        font-size: 0.9rem;
+    }
+    .slider-wrapper {
+        display: none;
+    }
+    .board-arena {
+        gap: 0.4rem;
+    }
+    .eval-gauge {
+        width: 10px;
+    }
+    .clock-box {
+        font-size: 1rem;
+        padding: 0.25rem 0.55rem;
+        min-width: 64px;
+    }
+    .actions-row {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

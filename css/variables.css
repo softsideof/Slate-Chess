@@ -1,0 +1,60 @@
+/* === MINIMALIST HUMAN-CENTERED DESIGN SYSTEM === */
+:root {
+    --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+
+    /* Warm Matte Dark Palette */
+    --bg-canvas: #0d0e12;
+    --bg-surface: #14161f;
+    --bg-surface-elevated: #1c1f2b;
+    --bg-subtle: rgba(255, 255, 255, 0.035);
+    --border-subtle: rgba(255, 255, 255, 0.07);
+    --border-hover: rgba(255, 255, 255, 0.16);
+
+    --text-high: #f1f2f5;
+    --text-med: #9da1ad;
+    --text-low: #5e6270;
+
+    --accent-glow: rgba(255, 255, 255, 0.1);
+    --accent-active: #e2e4ea;
+
+    /* Default Board Theme: Nordic Slate */
+    --sq-light: #dfded8;
+    --sq-dark: #4b5563;
+    --sq-highlight: rgba(255, 255, 255, 0.14);
+    --sq-select: rgba(165, 180, 252, 0.28);
+    --sq-check: radial-gradient(circle, rgba(239, 68, 68, 0.65) 0%, rgba(220, 38, 38, 0.25) 60%, transparent 90%);
+}
+
+/* Bespoke Board Themes */
+body.theme-monochrome {
+    --sq-light: #eaeaea;
+    --sq-dark: #2c2f38;
+}
+body.theme-cedar {
+    --sq-light: #ded7cb;
+    --sq-dark: #5e534b;
+}
+body.theme-titanium {
+    --sq-light: #d6dbe3;
+    --sq-dark: #3b4554;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+body {
+    font-family: var(--font-sans);
+    background-color: var(--bg-canvas);
+    color: var(--text-high);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+}
